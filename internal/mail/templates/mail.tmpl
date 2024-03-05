@@ -1,0 +1,21 @@
+{{define "subject"}}Railclone{{end}}
+
+{{define "plainBody"}}
+{"token": "{{.activationToken}}"}
+{{end}}
+
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <p>Railclone</p>
+        <pre><code>
+        {"token": "{{.activationToken}}"}
+        </code></pre>
+    </body>
+</html>
+{{end}}

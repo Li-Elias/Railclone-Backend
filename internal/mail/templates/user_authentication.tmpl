@@ -1,0 +1,20 @@
+{{define "subject"}}Railclone account authentication token{{end}}
+
+{{define "plainBody"}}
+{"token": "{{.authenticationToken}}"}
+{{end}}
+
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <pre><code>
+        {"token": "{{.authenticationToken}}"}
+        </code></pre>
+    </body>
+</html>
+{{end}}
